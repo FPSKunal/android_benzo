@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+
+  <!-- Get rid of this darwin bullshit -->
   <remove-project name="platform/prebuilts/clang/darwin-x86/3.1" />
   <remove-project name="platform/prebuilts/clang/darwin-x86/3.2" />
   <remove-project name="platform/prebuilts/clang/darwin-x86/arm/3.3" />
@@ -18,8 +20,20 @@
   <remove-project name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.8" />
   <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.8" />
   <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
+
+  <!--  Remove Regular Toolchains  -->
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
+
+  <!--  My Stuff  -->
   <project name="mydongistiny/android_device_motorola_shamu" path="device/moto/shamu" remote="github" revision="cm-12.0" />
   <project name="mydongistiny/android_kernel_motorola_shamu" path="kernel/moto/shamu" remote="github" revision="cm-12.0" />
   <project name="mydongistiny/android_vendor_motorola" path="vendor/motorola" remote="github" revision="lollipop" />
   <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-12.0" />
+
+  <!-- My Toolchains -->
+  <project path="prebuilts/gcc/linux-x86/arm/sm-arm-eabi-4.9" name="RobbieL811/Sabermod" remote="github" revision="arm-eabi-4.9" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="RobbieL811/Sabermod" remote="github" revision="androideabi-4.8" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="RobbieL811/Sabermod" remote="github" revision="androideabi-4.9" />
+
 </manifest>
